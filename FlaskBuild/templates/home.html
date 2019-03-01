@@ -1,0 +1,302 @@
+{% extends "layout.html" %}
+
+ {% block header %}
+
+<!-- Header -->
+<!-- Where the main photo is -->
+<header class="masthead">
+  <div class="intro-text">
+  </div>
+</header>
+<div class="container">
+  <img class="img-responsive mx-auto d-block" style="width:75%" src="{{ url_for('static', filename='img/EcoVerdeMainLogo.png')}}" alt=""/>
+</div>
+
+<hr>
+{% endblock header %}
+
+{% block services %}
+
+  <!-- Services SECTION -->
+
+
+<!-- Services SECTION -->
+
+    <div class="container" id="services">
+
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading text-uppercase">Services</h2>
+    </div>
+    <div class="">
+      <h4 class="service-heading">Consulting</h4>
+          <ul class="nothing col-lr-4">
+            <!-- REMOVED (Best Management Practices) -->
+            <li>Stormwater <abbr title="BMP">Best Management Practices</abbr> Compliance Inspections</li>
+            <li>Construction Inspections</li>
+            <li>Existing Site & Vegetation Assessment</li>
+            <li>BMP & Value Consulting</li>
+            <li>Permitting & Ordinance Review</li>
+          </ul>
+    </div>
+    <div class="">
+      <h4 class="service-heading">Management</h4>
+      <ul class="nothing col-lr-4">
+        <li>Stormwater BMP Compliance Construction and Maintenance</li>
+        <li>Low Impact Landscape and Site Construction</li>
+      </ul>
+    </div>
+    <div class="">
+      <h4 class="service-heading">Sustainable Design</h4>
+        <ul class="nothing col-lr-4">
+          <li>Low Impact Landscape and Site Design</li>
+          <li>Urban Design</li>
+          <li>Green Infrastructure Design and Planning</li>
+          <li>Community Focused Design</li>
+        </ul>
+    </div>
+  </div>
+
+
+{% endblock services %}
+
+
+{% block projects %}
+
+
+
+<!-- Portfolio Grid -->
+<section class="bg-light" id="portfolio">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+            </div>
+          </div>
+          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/PizzaKing/finished_patio.jpg') }}" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Sustainable Commercial Development</h4>
+          <p class="nothing" ></p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup2">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+            </div>
+          </div>
+
+          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/The_Idle/finished.jpg') }}" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Sustainable Community Development</h4>
+          <p class="nothing" ></p>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup3">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+            </div>
+          </div>
+
+          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/residential/residential_fence1.jpg') }}" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Environmental Management</h4><p> </p>
+          <p class="nothing" ></p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+{% endblock projects %}
+
+{% block about %}
+<!-- About -->
+<section id="about">
+  <div class="container" id="about">
+
+      <div class="col-lg-12">
+        <h2 class="section-heading text-uppercase text-center">About</h2>
+      </div>
+        <div class="col-xs-12" style="height:50px;"></div>
+    <div class="row">
+      <div class="col-lg-12">
+            <div class="text-left">
+              <h4 class="nothing text-left">
+                EcoVerde, Ecoconsulting and Management Inc., provides sustainable, creative,
+                low impact design, consulting and management solutions to our clients through
+                focusing on three fundamental goals and objectives:
+              </h4>
+            </div>
+            <div class="col-xs-12" style="height:25px;"></div>
+
+            <div class="text-left">
+                <h4>We are Client-centric</h4>
+                <p class="nothing" >
+                  We pride ourselves on our client-centric approach to our
+                  work. What that mean? Our success hinges on client satisfaction.
+                  We aren’t happy and haven’t done our job unless our clients are happy.
+                  </p>
+                <div class="col-xs-12" style="height:25px;"></div>
+            <div class="text-left">
+                <h4>We are Pro Environment</h4>
+                <p class="nothing text-left">
+                  As both stewards of the land and the environment,
+                  we are committed to protecting and minimizing the impact in the world
+                  which we work and live. Furthermore, we are committed to both leading
+                  and educating our clients on environmental stewardship,
+                  when necessary, through our extensive environmental experience.
+                </p>
+
+            </div>
+          <div class="col-xs-12" style="height:25px;"></div>
+            <div class="text-left">
+                <h4>We believe in Value</h4>
+                <p class="nothing text-left">
+                  We strive to value to our clients by providing cost effective
+                  solutions and ideas based on our creativity, thoughtfulness,
+                  resourcefulness, and experience.
+                </p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="col text-center">
+  <a class="btn btn-eco-verde-blue btn-xl text-center" role="button" href="{{ url_for('main.contact')}}">Contact Us</a>
+</div>
+
+{% endblock about %}
+
+
+
+{% block projects_pop_ups %}
+<!-- AKA modalS -->
+
+<!-- Portfolio Popups -->
+
+<!-- PROJECT 1 modal -->
+<div class="portfolio-modal modal fade" id="portfolioPopup1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">King Dough</h2>
+              <p>KIng Dough Pizza, Indianapolis</p>
+              <p>Sustainable site landscape design with native plantings and repurposed materials.</p>
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/PizzaKing/finished_patio.jpg') }}" alt="">
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/PizzaKing/street_view.jpg') }}" alt="">
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/PizzaKing/patio.jpg') }}" alt="">
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/PizzaKing/front.jpg') }}" alt="">
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/PizzaKing/sign.jpg') }}" alt="">
+
+              <button class="btn btn-eco-verde-blue" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECT 2 modal -->
+<div class="portfolio-modal modal fade" id="portfolioPopup2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">FLETCHER Place Gateway</h2>
+              <p class="text-left nothing">The Fletcher Place Gateway was created to create a sense of identity and place for the Fletcher Place Neighborhood near downtown Indianapolis.</p>
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/Fletcher_Place_Gateway/view_from_north_west.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/Fletcher_Place_Gateway/Gateway2.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/Fletcher_Place_Gateway/Gateway-spring.jpg') }}" alt="">
+                <p class="text-left nothing"><small>Completed Spring 2016; Commissioned by Fletcher Place Neighborhood Association</small></p>
+
+                <div class="col-xs-12" style="height:25px;"></div>
+
+                <h2 class="text-uppercase">The Idle</h2>
+                <p class="text-left nothing">The Idle is an urban pedestrian overlook created to reconnect the adjacent neighborhoods once divided by the Interstate Highway.
+                      The Idle was created and funded entirely by the local community.</p>
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/The_Idle/concept_art.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/The_Idle/map_view.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/The_Idle/seat_view.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/The_Idle/workers.jpg') }}" alt="">
+                <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/The_Idle/finished.jpg') }}" alt="">
+                <p class="text-left nothing"><small>Completed Fall 2018; Commissioned by City of Indianapolis, State of Indiana and Federal Highway Administration</small></p>
+
+              <button class="btn btn-eco-verde-blue" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- PROECT 3 modal -->
+<div class="portfolio-modal modal fade" id="portfolioPopup3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase">Environmental Management </h2>
+              <p><abbr title="SWPPP">Storm Water Pollution Prevention Plan</abbr>  compliance inspections and management.  We proactively keep our clients SWPPP compliant. </p>
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/residential/residential_fence1.jpg') }}" alt="">
+              <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='portfolio/residential/residential_fence2.jpg') }}" alt="">
+              <button class="btn btn-eco-verde-blue" data-dismiss="modal" type="button">
+                <i class="fas fa-times"></i>
+                Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock projects_pop_ups %}
