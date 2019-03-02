@@ -147,16 +147,13 @@ li{
   color: #222121;
 }
 
-.nothing{
 
-}
 
 @media (min-width: 768px) {
   section {
     padding: 50px 0;
   }
 }
-/* this shit needs to be inspected if used */
 .btn {
   font-family: 'Gotham', 'Helvetica', 'sans serif';
   font-weight: 700;
@@ -274,15 +271,15 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
+header.masthead .header-size {
+  padding-top: 350px;
   padding-bottom: 100px;
 }
 
