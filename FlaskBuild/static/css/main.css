@@ -264,7 +264,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../portfolio/Fletcher_Place_Gateway/Gateway2.jpg");
+  background-image: url("header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
