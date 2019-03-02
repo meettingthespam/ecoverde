@@ -78,9 +78,7 @@ footer span {
 
 
 body {
-  overflow-x: hidden;
   font-family: 'Gotham', 'Helvetica', 'sans serif';
-  color: #222121;
 }
 
 legend{
@@ -91,7 +89,6 @@ legend{
 p {
   line-height: 1.75;
   font-family: 'Gotham', 'Helvetica', 'sans serif';
-  color: #222121;
 }
 
 a {
@@ -103,10 +100,6 @@ a:hover {
   color: #45b8ed;
 }
 
-.text-primary {
-  color: #45b8ed !important;
-  font-family: 'Gotham', 'Helvetica', 'sans serif';
-}
 
 h1,
 h2,
