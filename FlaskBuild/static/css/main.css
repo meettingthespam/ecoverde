@@ -4,7 +4,7 @@
  }
 
 .eco-verde-blue{
-  color: #85D1F3 !important;
+  color: #85D1F3 ;
 }
 
 .bg-eco-verde-blue{
@@ -14,18 +14,18 @@
 a.bg-eco-verde-blue:hover, a.bg-eco-blue:focus,
 button.bg-eco-blue:hover,
 button.bg-eco-blue:focus {
-  background-color:  #45b8ed !important;
+  background-color:  #45b8ed ;
 }
 
 
 .btn-eco-verde-blue {
-  color: #e5e5e5 !important;
+  color: #e5e5e5 ;
   background-color: #45b8ed;
   border-color: #45b8ed;
 }
 
 .btn-eco-verde-blue:hover {
-  color: #e5e5e5 !important;
+  color: #e5e5e5 ;
   background-color: #85D1F3;
   border-color: #85D1F3;
 }
@@ -51,7 +51,7 @@ button.bg-eco-verde-green:focus {
 }
 
 .bg-eco-verde-gray{;
-  background-color: #404040;
+  background-color: #404040 ;
 }
 
 
