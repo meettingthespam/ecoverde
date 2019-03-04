@@ -1,6 +1,6 @@
 from flask import (render_template, request, url_for,
                     flash, redirect, abort, Blueprint)
-from FlaskBuild import db, mail
+from FlaskBuild import mail #, db
 from FlaskBuild.main.forms import CustomerMessageForm
 from FlaskBuild.models import UserMessage
 from flask_mail import Message
@@ -36,14 +36,12 @@ def contact():
         # sending the message
         mail.send(msg)
 
-        customer = UserMessage(name=form.name.data,
-                                email=form.email.data,
-                                phone=form.phone.data,
-                                message=form.message.data)
-        db.session.add(customer)
-        db.session.commit()
-
-
+        # customer = UserMessage(name=form.name.data,
+        #                         email=form.email.data,
+        #                         phone=form.phone.data,
+        #                         message=form.message.data)
+        # db.session.add(customer)
+        # db.session.commit()
 
         flash('Message sent thank you. We will be in touch', 'success')
         return redirect(url_for('main.home'))
