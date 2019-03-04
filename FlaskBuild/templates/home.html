@@ -1,123 +1,114 @@
 {% extends "layout.html" %}
 
- {% block header %}
+   {% block header %}
+         <div class="container">
+           <img class="img-responsive mx-auto d-block" style="width:90%" src="{{ url_for('static', filename='css/header-bg.jpg')}}" alt=""/>
+         </div>
+         <div class="container">
+           <img class="img-responsive mx-auto d-block" style="width:75%" src="{{ url_for('static', filename='EcoVerdeMainLogo.png')}}" alt=""/>
+         </div>
+        <hr>
 
-<!-- Header -->
-<!-- Where the main photo is -->
-<header class="masthead">
-  <div class="header-size">
-  </div>
-</header>
-<div class="container">
-  <img class="img-responsive mx-auto d-block" style="width:75%" src="{{ url_for('static', filename='EcoVerdeMainLogo.png')}}" alt=""/>
-</div>
-
-<hr>
-{% endblock header %}
-
-{% block services %}
-
-  <!-- Services SECTION -->
+  {% endblock header %}
 
 
-<!-- Services SECTION -->
+  {% block services %}
 
-    <div class="container" id="services">
+      <!-- Services SECTION -->
+      <section class="bg-light" id="services">
+          <div class="container">
 
-    <div class="col-lg-12 text-center">
-      <h2 class="section-heading text-uppercase">Services</h2>
-    </div>
-    <div >
-      <h4 class="service-heading">Consulting</h4>
-          <ul class=" col-lr-4">
-            <!-- REMOVED (Best Management Practices) -->
-            <li>Stormwater <abbr title="BMP">Best Management Practices</abbr> Compliance Inspections</li>
-            <li>Construction Inspections</li>
-            <li>Existing Site & Vegetation Assessment</li>
-            <li>BMP & Value Consulting</li>
-            <li>Permitting & Ordinance Review</li>
-          </ul>
-    </div>
-    <div >
-      <h4 class="service-heading">Management</h4>
-      <ul class=" col-lr-4">
-        <li>Stormwater BMP Compliance Construction and Maintenance</li>
-        <li>Low Impact Landscape and Site Construction</li>
-      </ul>
-    </div>
-    <div >
-      <h4 class="service-heading">Sustainable Design</h4>
-        <ul class=" col-lr-4">
-          <li>Low Impact Landscape and Site Design</li>
-          <li>Urban Design</li>
-          <li>Green Infrastructure Design and Planning</li>
-          <li>Community Focused Design</li>
-        </ul>
-    </div>
-  </div>
+              <div class="col-lg-12">
+                <h2 class="section-heading text-uppercase text-center">Services</h2>
+              </div>
+              <div >
+                <h4 >Consulting</h4>
+                    <ul class=" col-lr-4">
+                      <!-- REMOVED (Best Management Practices) -->
+                      <li>Stormwater <abbr title="BMP">Best Management Practices</abbr> Compliance Inspections</li>
+                      <li>Construction Inspections</li>
+                      <li>Existing Site & Vegetation Assessment</li>
+                      <li>BMP & Value Consulting</li>
+                      <li>Permitting & Ordinance Review</li>
+                    </ul>
+              </div>
+              <div >
+                <h4 >Management</h4>
+                <ul class=" col-lr-4">
+                  <li>Stormwater BMP Compliance Construction and Maintenance</li>
+                  <li>Low Impact Landscape and Site Construction</li>
+                </ul>
+              </div>
+              <div >
+                <h4 >Sustainable Design</h4>
+                  <ul class=" col-lr-4">
+                    <li>Low Impact Landscape and Site Design</li>
+                    <li>Urban Design</li>
+                    <li>Green Infrastructure Design and Planning</li>
+                    <li>Community Focused Design</li>
+                  </ul>
+              </div>
+        </div>
+      </section>
 
-
-{% endblock services %}
+  {% endblock services %}
 
 
 {% block projects %}
 
 
 
-<!-- Portfolio Grid -->
-<section class="bg-light" id="portfolio">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Portfolio</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup1">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
+      <!-- Portfolio Grid -->
+      <section class="bg-light" id="portfolio">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Portfolio</h2>
             </div>
           </div>
-          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/PizzaKing/finished_patio.jpg') }}" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Sustainable Commercial Development</h4>
-          <p></p>
-        </div>
-      </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                  </div>
+                </div>
+                <img class="img-fluid" src="{{ url_for('static', filename='portfolio/PizzaKing/finished_patio.jpg') }}" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Sustainable Commercial Development</h4>
+              </div>
+            </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup2">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                  </div>
+                </div>
+
+                <img class="img-fluid" src="{{ url_for('static', filename='portfolio/The_Idle/finished.jpg') }}" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Sustainable Community Development</h4>
+              </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                  </div>
+                </div>
+
+                <img class="img-fluid" src="{{ url_for('static', filename='portfolio/residential/residential_fence1.jpg') }}" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Environmental Management</h4>
+              </div>
             </div>
           </div>
-
-          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/The_Idle/finished.jpg') }}" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Sustainable Community Development</h4>
-          <p></p>
-        </div>
-      </div>
-
-
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioPopup3">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-            </div>
-          </div>
-
-          <img class="img-fluid" src="{{ url_for('static', filename='portfolio/residential/residential_fence1.jpg') }}" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Environmental Management</h4><p> </p>
-          <p></p>
-        </div>
-      </div>
-    </div>
-</section>
+      </section>
 
 
 
@@ -126,7 +117,7 @@
 {% block about %}
 <!-- About -->
 <section id="about">
-  <div class="container" id="about">
+  <div class="container">
 
       <div class="col-lg-12">
         <h2 class="section-heading text-uppercase text-center">About</h2>
