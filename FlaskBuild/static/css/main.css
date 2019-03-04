@@ -4,7 +4,7 @@
  }
 
 .eco-verde-blue{
-  color: #85D1F3 ;
+  color: #85D1F3 !important;
 }
 
 .bg-eco-verde-blue{
@@ -14,18 +14,18 @@
 a.bg-eco-verde-blue:hover, a.bg-eco-blue:focus,
 button.bg-eco-blue:hover,
 button.bg-eco-blue:focus {
-  background-color:  #45b8ed ;
+  background-color:  #45b8ed !important;
 }
 
 
 .btn-eco-verde-blue {
-  color: #fff;
+  color: #e5e5e5 !important;
   background-color: #45b8ed;
   border-color: #45b8ed;
 }
 
 .btn-eco-verde-blue:hover {
-  color: #fff;
+  color: #e5e5e5 !important;
   background-color: #85D1F3;
   border-color: #85D1F3;
 }
@@ -45,21 +45,18 @@ button.bg-eco-verde-green:focus {
 }
 
 .btn-eco-verde-green{
-  color: #fff;
+  color: #e5e5e5;
   background-color: #7DAA42;
   border-color: #7DAA42;
 }
 
 .bg-eco-verde-gray{;
-  background-color: #404040 ;
+  background-color: #dfdfdf ;
 }
 
-.text-eco-gray{
-  color: #404040
-}
 
 .btn-eco-verde-gray{
-  color: #fff;
+  color: #e5e5e5;
   background-color: #404040;
   border-color: #404040;
 }
@@ -92,7 +89,7 @@ p {
 }
 
 a {
-  color: #404040 ;
+  color: #dfdfdf ;
   font-family: 'Gotham', 'Helvetica', 'sans serif';
 }
 
@@ -261,40 +258,6 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
-header.masthead .header-size {
-  padding-top: 350px;
-  padding-bottom: 100px;
-}
-
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  color: black;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Gotham', 'Helvetica', 'sans serif';
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  color: black;
-  line-height: 50px;
-  margin-bottom: 25px;
-  background: rgba(64, 64, 64, 0.5);
-  font-family: 'Gotham', 'Helvetica', 'sans serif';
-}
-
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -377,7 +340,7 @@ header.masthead .intro-text .intro-heading {
   margin: 5 auto;
   padding: 15px;
   text-align: center;
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
