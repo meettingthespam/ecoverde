@@ -4,17 +4,17 @@
  }
 
 .eco-verde-blue{
-  color: #85D1F3 !important;
+  color: #85D1F3 ;
 }
 
 .bg-eco-verde-blue{
-  background-color:  #45b8ed !important;
+  background-color:  #45b8ed ;
 }
 
 a.bg-eco-verde-blue:hover, a.bg-eco-blue:focus,
 button.bg-eco-blue:hover,
 button.bg-eco-blue:focus {
-  background-color:  #45b8ed !important;
+  background-color:  #45b8ed ;
 }
 
 
@@ -31,17 +31,17 @@ button.bg-eco-blue:focus {
 }
 
 .eco-verde-green{;
-  color:#7DAA42 !important;
+  color:#7DAA42 ;
 }
 
 .bg-eco-verde-green{;
-  background-color: #7DAA42 !important;
+  background-color: #7DAA42 ;
 }
 
 a.bg-eco-verde-green:hover, a.bg-eco-verde-green:focus,
 button.bg-eco-verde-green:hover,
 button.bg-eco-verde-green:focus {
-  background-color: #7DAA42 !important;
+  background-color: #7DAA42 ;
 }
 
 .btn-eco-verde-green{
@@ -51,7 +51,7 @@ button.bg-eco-verde-green:focus {
 }
 
 .bg-eco-verde-gray{;
-  background-color: #404040 !important;
+  background-color: #404040 ;
 }
 
 .text-eco-gray{
@@ -82,7 +82,7 @@ body {
 }
 
 legend{
-  font-family: "Gotham";
+  font-family: 'Gotham', 'Helvetica', 'sans serif';
   color: #222121;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 a {
-  color: #404040 !important;
+  color: #404040 ;
   font-family: 'Gotham', 'Helvetica', 'sans serif';
 }
 
@@ -164,14 +164,14 @@ li{
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #45b8ed !important;
-  border-color: #45b8ed !important;
+  background-color: #45b8ed ;
+  border-color: #45b8ed ;
   color: white;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) ;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) ;
 }
 
 ::-moz-selection {
@@ -248,7 +248,7 @@ img::-moz-selection {
     transition: all 0.3s;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
+    padding: 1.1em 1em ;
   }
   #mainNav.navbar-shrink {
     padding-top: 0;
@@ -403,7 +403,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal {
-  padding-right: 0px !important;
+  padding-right: 0px ;
 }
 
 .portfolio-modal .modal-dialog {
