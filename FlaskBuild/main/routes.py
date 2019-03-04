@@ -2,7 +2,7 @@ from flask import (render_template, request, url_for,
                     flash, redirect, abort, Blueprint)
 from FlaskBuild import mail #, db
 from FlaskBuild.main.forms import CustomerMessageForm
-from FlaskBuild.models import UserMessage
+# from FlaskBuild.models import UserMessage
 from flask_mail import Message
 
 
