@@ -48,6 +48,4 @@ From: \n\t{form.name.data}
 
         flash('Message sent thank you. We will be in touch', 'success')
         return redirect(url_for('main.home'))
-    else:
-        flash('All fields are required.', 'danger')
     return render_template('contact.html', form=form, title="Contact us")
