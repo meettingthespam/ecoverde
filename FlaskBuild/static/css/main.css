@@ -129,15 +129,6 @@ section h3.section-subheading {
   font-family: 'Gotham', 'Helvetica', 'sans serif';
 }
 
-ul{
-  color: #222121;
-}
-
-li{
-  color: #222121;
-}
-
-
 
 @media (min-width: 768px) {
   section {
@@ -338,7 +329,7 @@ img::-moz-selection {
   max-width: 400px;
   height: 125px;
   margin: 5 auto;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: #e5e5e5;
 }
