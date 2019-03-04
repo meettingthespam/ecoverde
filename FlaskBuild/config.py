@@ -3,12 +3,12 @@ import json
 
 with open('/etc/config.json') as config_file:
     config = json.load(config_file)
-
+# config.get
 class Config:
 
     SECRET_KEY = config.get('SECRET_KEY')
 
-    SQLALCHEMY_DATABASE_URI = config.get('SQLALCHEMY_DATABASE_URI')
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
     # using GMAIL for the sending and receiving of email
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
