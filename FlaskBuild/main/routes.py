@@ -28,8 +28,7 @@ def contact():
         msg = Message('Customer Inquision from Website',
                     sender='info.ecoverdeinc@gmail.com',
                     recipients=['info.ecoverdeinc@gmail.com'])
-        msg.body = f'''
-From: \n\t{form.name.data}
+        msg.body = f'''From: \n\t{form.name.data}
 \nPhone: \n\t{form.phone.data}
 \nEmail: \n\t{form.email.data}
 \nMessage: \n\t{form.message.data}
